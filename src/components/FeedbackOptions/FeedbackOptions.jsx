@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, handleFeedback }) => {
   const optionsKeys = Object.keys(options);
@@ -6,6 +7,7 @@ const FeedbackOptions = ({ options, handleFeedback }) => {
     <div>
       {optionsKeys.map(optionKey => (
         <button
+          className={css.button}
           type="button"
           key={optionKey}
           onClick={() => {
@@ -25,3 +27,4 @@ FeedbackOptions.propType = {
 };
 
 export default FeedbackOptions;
+
