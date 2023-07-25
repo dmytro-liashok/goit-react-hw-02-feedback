@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
 
 const Statistics = ({ options, totalFeedback, positiveFeedback }) => {
   const { good, neutral, bad } = options;
